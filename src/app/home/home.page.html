@@ -1,14 +1,45 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
+ 
+    <ion-row class="logo-row">
+        <ion-col></ion-col>
+        <ion-col width-67>
+          <img src="../../assets/icon/ic_login_icon.png"/>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+  <ion-card class="ionCard"> 
+  <form>
+    <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col align-self-center size-md="6">
+          <div text-center>
+            <h3>Please, sign in here</h3>
+          </div>
+          <div padding>
+            <ion-item>
+               
+                <span item-right><ion-icon ios="ios-person" md="md-person" color="primary"></ion-icon></span>
+              <ion-input class="inputTextBox" name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+                <span item-right><ion-icon ios="ios-lock" md="md-lock" color="primary"></ion-icon></span>
+              <ion-input class="inputTextBox" name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button  type="submit"  expand="block">Login</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+  </ion-card>
 </ion-content>

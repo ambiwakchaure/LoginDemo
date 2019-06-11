@@ -1,1 +1,9 @@
-
+.inputTextBox{
+    margin-left: 5px;
+} 
+.login-icon {
+    background-image: url('../../assets/icon/ic_login_icon.png');
+}
+ion-content.background{
+    --background: url(../../assets/icon/ic_background.jpg) 0 0/100% 100% no-repeat;
+}
